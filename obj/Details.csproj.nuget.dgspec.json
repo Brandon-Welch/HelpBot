@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Details\\Details.csproj": {}
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\helpbot\\Details.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Details\\Details.csproj": {
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\helpbot\\Details.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Details\\Details.csproj",
+        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\helpbot\\Details.csproj",
         "projectName": "Details",
-        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Details\\Details.csproj",
+        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\helpbot\\Details.csproj",
         "packagesPath": "C:\\Users\\A140953\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Details\\obj\\",
+        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\helpbot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A140953\\AppData\\Roaming\\NuGet\\NuGet.Config"
