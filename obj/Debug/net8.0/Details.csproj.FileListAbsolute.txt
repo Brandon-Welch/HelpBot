@@ -1,0 +1,14 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\bin\Debug\net8.0\Details.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\bin\Debug\net8.0\Details.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\bin\Debug\net8.0\Details.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\bin\Debug\net8.0\Details.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\bin\Debug\net8.0\Details.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\refint\Details.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\Details.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\Details\obj\Debug\net8.0\ref\Details.dll
