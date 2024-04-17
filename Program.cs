@@ -34,8 +34,28 @@ Console.WriteLine("\t Git -help | -h -> help");
 Console.WriteLine("\t Git config -> configure git");
 Console.WriteLine("\t\t\t Git config --list -> see a list of current config settings");
 Console.WriteLine("\t\t\t Git config --global -> changes config for entire machine, not just current directory");
+Console.WriteLine("\t Git clone <url> -> Clones a repo");
+Console.WriteLine("\t Git status -> Provides current status of .git file in current directory");
+Console.WriteLine("\t\t Shows untracked files if things have not been staged");
+Console.WriteLine("\t Git add xxx -> To Stage files");
+Console.WriteLine("\t\t Git add <filename.ext> -> Stages specific file");
+Console.WriteLine("\t\t Git add . -> Stages all files in the current directory");
+Console.WriteLine("\t\t Git add .. -> Stages all files in the Parent directory");
+Console.WriteLine("\t Git status -> Provides current status of .git file in current directory");
+Console.WriteLine("\t\t Shows untracked files if things have not been committed");
+Console.WriteLine("\t Git commit -m \"random message\" ->  Commits files LOCALLY");
+Console.WriteLine("\t Git status -> Provides current status of .git file in current directory");
+Console.WriteLine("\t\t Shows if Local branch is AHEAD and if anything is left to commit");
+Console.WriteLine("\t Git push ->  Commits files to CENTRAL REPO from LOCAL");
+Console.WriteLine("\t Git status -> Provides current status of .git file in current directory");
+Console.WriteLine("\t\t Shows how many objects were written and to which REPO it was commited");
+Console.WriteLine("\t Git fetch ->  Checks CENTRAL REPO to Local for changes");
+Console.WriteLine("\t Git status -> Provides current status of .git file in current directory");
+Console.WriteLine("\t\t Shows if Local branch is BEHIND and if anything is left to commit");
+Console.WriteLine("\t Git pull ->  Commits files to LOCAL from CENTRAL REPO");
+Console.WriteLine("\t Git status -> Provides current status of .git file in current directory");
 
-
+Console.WriteLine("\nVariables");
 
 
 

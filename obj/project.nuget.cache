@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8lsgfuKq2iOf8G+1+m0tPtQ8h3tUIZSvFBYkn+/KbGExlro+g84k1AOGJOWfRBry3NXKKne2Wuk11u1qA9aYYg==",
+  "dgSpecHash": "vinbJl2iXXlVjH0YMRLyPbQAwNg7g9Pxj4Vp/e/sknY8TcdC9CrJz5zsiokvgVvw/pF7M6IDhXqb0cDGF21pFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\helpbot\\Details.csproj",
+  "projectFilePath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Bots\\HelpBot\\Details.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
