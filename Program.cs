@@ -2,6 +2,9 @@
 
 //File to store commonly used information
 
+string fname = "Brandon";
+string lname = "Welch";
+System.Console.WriteLine("Hello " + fname + " " + lname + "!");
 
 Console.WriteLine("\nI hope this helps!\n\n"); // \n in front to create a blank line between the prompt and the program
 
@@ -79,18 +82,44 @@ Console.WriteLine("\t\t\t enum -> enumerator");
 Console.WriteLine("\t\t\t struct -> ");
 Console.WriteLine("\t Common Variables Operations");
 Console.WriteLine("\t\t Basic Operators");
-Console.WriteLine("\t\t\t int num = 1 + 2;");
-Console.WriteLine("\t\t\t int num = 1 - 2;");
-Console.WriteLine("\t\t\t int num = 1 * 2;");
-Console.WriteLine("\t\t\t int num = 1 / 2;");
-Console.WriteLine("\t\t\t int num = 1 % 2;");
+Console.WriteLine("\t\t\t int num = 1 + 2");
+Console.WriteLine("\t\t\t int num = 1 - 2");
+Console.WriteLine("\t\t\t int num = 1 * 2");
+Console.WriteLine("\t\t\t int num = 1 / 2");
+Console.WriteLine("\t\t\t int num = 1 % 2");
 Console.WriteLine("\t\t Augmented (Compound) Assignment Operators");
-Console.WriteLine("\t\t\t int num3 * 3; -> won't execute");
-Console.WriteLine("\t\t\t int num3 = num3 * 3; -> Preferred Method, Right Side calculates and assigns new value back to num3");
-Console.WriteLine("\t\t\t int result = num3 * 3; -> Alternate Method but involves an additional variable to assign the new value");
-
-
-
+Console.WriteLine("\t\t\t int num3 * 3 -> won't execute");
+Console.WriteLine("\t\t\t int num3 = num3 * 3 -> Preferred Method, Right Side calculates and assigns new value back to num3");
+Console.WriteLine("\t\t\t int result = num3 * 3 -> Alternate Method but involves an additional variable to assign the new value");
+Console.WriteLine("\t\t\t int num3 += 5 -> same as int num3 = num3 + 5");
+Console.WriteLine("\t\t\t int num3 -= 5");
+Console.WriteLine("\t\t\t int num3 *= 5");
+Console.WriteLine("\t\t\t int num3 /= 5");
+Console.WriteLine("\t\t\t int num3 %= 5");
+Console.WriteLine("\t\t Increment / Decrement Operators");
+Console.WriteLine("\t\t\t num3++ -> Adds EXACTLY 1 -> shorthand for num3 += 1 -> shorthand for num3 = num3 + 1");
+Console.WriteLine("\t\t\t ++num3 -> Adds EXACTLY 1");
+Console.WriteLine("\t\t\t num3-- -> Subtracts EXATLY 1");
+Console.WriteLine("\t\t\t --num3 -> Subtracts EXATLY 1");
+Console.WriteLine("\t\t\t\t num3++ // Post-Increment (Will increment AFTER the variable is used)");
+Console.WriteLine("\t\t\t\t ++num3 // Pre-Increment (Will increment BEFORE the variable is used)");
+Console.WriteLine("\t\t Booleans");
+Console.WriteLine("\t\t\t Value type that stores either 'True' OR 'False'");
+Console.WriteLine("\t\t\t\t bool isSunny = true;");
+Console.WriteLine("\t\t\t\t\t Console.WriteLine(isSunny); -> True;");
+Console.WriteLine("\t\t\t\t bool isRainy = false;");
+Console.WriteLine("\t\t\t\t\t Console.WriteLine(isRainy); -> False;");
+Console.WriteLine("\t\t\t ! -> null/Negation Operator -> change boolean into its 'opposite' value");
+Console.WriteLine("\t\t\t\t bool Console.WriteLine(!isSunny); -> False;");
+Console.WriteLine("\t\t\t A toggle -> switch boolean value to the over boolean value True>False or False>True");
+Console.WriteLine("\t\t\t\t isSunny = !isSunny; -> Changed True -> False");
+Console.WriteLine("\t\t Relational Operators");
+Console.WriteLine("\t\t\t == Equal -> checks if the 2 values equal each other");
+Console.WriteLine("\t\t\t =! Not Equal");
+Console.WriteLine("\t\t\t < Greater Than");
+Console.WriteLine("\t\t\t > Less Than");
+Console.WriteLine("\t\t\t <= Greater Than OR Equal To");
+Console.WriteLine("\t\t\t >= Less Than OR Equal To");
 
 /*
 future use
