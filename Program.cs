@@ -17,7 +17,7 @@ string needHelp = Console.ReadLine();
 if (needHelp == Yes)
 {
 
-    Console.WriteLine("\nWhat can I help you with?\n\n");
+    Console.WriteLine("\nWhat can I help you with?\n");
         Console.WriteLine("\tPrint to screen");
         Console.WriteLine("\tEscape clauses");
         Console.WriteLine("\tCommon dotnet commands");
@@ -55,6 +55,14 @@ string topic = Console.ReadLine();
             Console.WriteLine("\t\t\t dotnet new gitignore -> create new .NET specific gitignore file");
             Console.WriteLine("\t dotnet run -> clean, restore, build, and run the project");
             Console.WriteLine("\t dotnet add package <package name> -> adds packaged dependency to your project (.csproj file)");
+        }
+
+
+
+
+    else
+        {
+            Console.WriteLine("\nSorry, I am unable to assist!\n\n");
         }
 
 //    Console.WriteLine("\nI hope this helps!?\n\n");
