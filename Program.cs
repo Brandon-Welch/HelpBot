@@ -18,7 +18,7 @@ if (needHelp == Yes)
 {
 
     Console.WriteLine("\nWhat can I help you with?\n");
-        Console.WriteLine("\tPrint to screen");
+        Console.WriteLine("\t1) Print to screen");
         Console.WriteLine("\tEscape clauses");
         Console.WriteLine("\tCommon dotnet commands");
         Console.WriteLine("\tCommon GIT commands");
