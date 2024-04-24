@@ -26,8 +26,9 @@ if (needHelp == Yes)
 
 string topic = Console.ReadLine();
 
-    if (topic == PrintToScreen)
+    if (topic == PrintToScreen) //turn this into a switch/case?
         {
+            //make this whole thing a Method?
             Console.WriteLine("\nPrint to screen");
             Console.WriteLine("\t Console.WriteLine(\"some text\") prints to screen and generates a line break");
             Console.Write("\t Console.Write(\"some text\") prints to screen but does not generate a line break");
