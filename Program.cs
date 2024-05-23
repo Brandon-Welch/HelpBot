@@ -13,16 +13,16 @@ class Program
     static void Main(string[] args)
     {
        string Yes = "Yes";
-string PrintToScreen = "1";
-string EscapeClause = "2";
-string DotNetCommands = "3";
-string GitCommands = "4";
-string Variables = "5";
-string Conditionals = "6";
-string Loops = "7";
-string Arrays = "8";
-string Methods = "9";
-string Classes = "10";
+        string PrintToScreen = "1";
+        string EscapeClause = "2";
+        string DotNetCommands = "3";
+        string GitCommands = "4";
+        string Variables = "5";
+        string Conditionals = "6";
+        string Loops = "7";
+        string Arrays = "8";
+        string Methods = "9";
+        string Classes = "10";
 
 Console.WriteLine("\nHello, I am your Fundamentals HelpBot! Do you need help? [Yes | No]"); // \n in front to create a blank line between the prompt and the program
 string? needHelp = Console.ReadLine(); //? gets rid of potential null warning
