@@ -1,0 +1,154 @@
+	• RESTful APIs Review
+
+	• What is REST?
+		○ REST (Representational State Transfer) is an architectural style for designing networked applications. It relies on a stateless, client-server, cacheable communications protocol -- the HTTP. REST is designed to take advantage of existing protocols and can be used over nearly any protocol, but when used for web APIs, it's most commonly associated with HTTP.
+
+	• What is a REST API?
+		○ REST API (Application Programming Interface) is an interface that allows for interaction with RESTful web services. It uses standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources, which are identified by URIs (Uniform Resource Identifiers). REST APIs are designed to be stateless and support CRUD (Create, Read, Update, Delete) operations.
+
+	• What are REST Constraints?
+		○ REST is defined by the following architectural constraints:
+			1. Client-Server: 
+				The client and the server are separated; clients interact with servers through a uniform interface (typically HTTP).
+			2. Stateless: 
+				Each request from a client to a server must contain all the information the server needs to fulfill that request. The server does not store any client context between requests.
+			3. Cacheable: 
+				Responses must explicitly indicate whether they are cacheable to improve network efficiency.
+			4. Uniform Interface: 
+				The interface between clients and servers is standardized to improve simplicity and visibility of interactions.
+			5. Layered System: 
+				The architecture allows for a layered system where a client can connect to an intermediary server (e.g., for load balancing, caching).
+			6. Code on Demand (Optional): 
+				Servers can extend the functionality of clients by transferring executable code.
+
+	• What is HATEOAS?
+		○ HATEOAS stands for Hypermedia As The Engine Of Application State. It is a constraint of the REST application architecture that distinguishes it from other network application architectures. According to HATEOAS, a client interacts with a network application entirely through hypermedia provided dynamically by application servers. This allows the client to dynamically navigate resources by following links, similar to how web pages are navigated.
+
+	• What is Idempotent?
+		○ In the context of HTTP methods in REST, an operation is idempotent if it produces the same result regardless of how many times it is performed. For instance, the HTTP GET, PUT, and DELETE methods are idempotent:
+			§ GET: Fetching the same resource multiple times will always return the same resource, provided it hasn t changed on the server.
+			§ PUT: Updating a resource with the same data multiple times will not change the outcome beyond the initial application.
+			§ DELETE: Deleting a resource multiple times will result in the resource being deleted without causing an error beyond the first deletion.
+
+	• What is JSON?
+		○ JSON (JavaScript Object Notation) is a lightweight data interchange format that's easy for humans to read and write, and easy for machines to parse and generate. It is a text format that is language-independent but uses conventions familiar to programmers of the C family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and others. JSON is widely used in RESTful APIs to format data being transferred between a client and server.
+
+	• What is the Richardson Maturity Model?
+		○ The Richardson Maturity Model is a way to grade your API according to the constraints of REST. It is divided into four levels:
+			§ Level 0: The Swamp of POX (Plain Ole XML)
+				□  Uses HTTP but not in a RESTful way. Essentially, it delivers XML data via POST.
+			§ Level 1: Resources
+				□ Introduces the concept of resources, where each resource is accessible via a URI.
+			§ Level 2:  HTTP Verbs 
+				□ Uses HTTP methods (GET, POST, PUT, DELETE) correctly.
+			§ Level 3: HATEOAS
+				□ Uses hypermedia links to allow clients to navigate the API dynamically.
+
+	• Difference between Authorization and Authentication
+		○ Authentication
+			§ The process of verifying who a user is. This is often done via login credentials such as a username and password. For example, when you log into a website, you are authenticating yourself to the server.
+		○ Authorization
+			§ The process of verifying what a user has access to. This occurs after authentication and determines the user's permissions and access levels within the system. For example, after logging in, you might have access to certain resources or actions that are determined by your role or permissions.
+
+
+
+
+
+• Key Components of ASP.NET Core
+	1. ASP.NET Core MVC: A framework for building web apps and APIs using the Model-View-Controller (MVC) design pattern.
+	2. Middleware: Components that form the HTTP request pipeline and handle cross-cutting concerns like authentication, logging, and error handling.
+	3. Dependency Injection (DI): A technique for achieving Inversion of Control (IoC) between classes and their dependencies, built into ASP.NET Core.
+		a. a technique whereby one object (or static method) supplies the dependencies of another object. A dependency is an object that can be used (a service).
+	4. Configuration: A flexible mechanism for configuring applications using various sources (JSON files, environment variables, command-line arguments, etc.).
+		a. Way of configuring a web app. Commonly JSON/XML Based on KVP so easy to human read and easy to interpret in scripts for API/etc.
+			i. Ex: AppSettings.Json
+• Controllers
+	• In ASP.NET Core, controllers are used to define and handle the logic for processing incoming HTTP requests and generating responses. They are a central part of the MVC (Model-View-Controller) pattern, which helps organize and structure the code for web applications.
+
+	• Key Concepts of Controllers in ASP.NET Core
+	1. Controller Class:
+		a. A controller is a class that derives from ControllerBase or Controller (which itself derives from ControllerBase and includes additional view-related functionality).
+		b. Controllers are typically located in the Controllers folder of an ASP.NET Core project.
+	2. Action Methods:
+		a. Action methods are public methods in a controller that handle HTTP requests. Each action method corresponds to a specific endpoint or URL pattern.
+		b. Action methods return IActionResult or a specific result type like JsonResult, ViewResult, OkResult, etc.
+	3. Attributes:
+		a. Attributes are used to configure routes, HTTP methods, and other behaviors for action methods and controllers.
+		b. Common attributes include [HttpGet], [HttpPost], [HttpPut], [HttpDelete], [Route], and [ApiController]
+
+• Dependency Injection and Services
+	• In larger applications, you should delegate the business logic to service classes. This promotes separation of concerns and makes the code more maintainable and testable. Services can be injected into controllers using dependency injection.
+
+
+• Action Methods
+	• Action methods are the core components of a controller in ASP.NET Core. They handle incoming HTTP requests and generate the appropriate responses. Each action method corresponds to a specific endpoint or URL pattern and can handle different HTTP methods like GET, POST, PUT, DELETE, etc.
+	
+	• Key Concepts of Action Methods
+		1. Attributes:
+			1. Action methods are decorated with attributes to specify which HTTP methods they handle ([HttpGet], [HttpPost], [HttpPut], [HttpDelete], etc.) and to define routing information ([Route], [HttpGet("{id}")], etc.).
+		2. Return Types:
+			1. Action methods typically return an IActionResult or a specific result type (JsonResult, ViewResult, OkResult, etc.). This allows for flexibility in generating different types of responses.
+		3. Parameter Binding:
+			1. ASP.NET Core automatically binds action method parameters from various parts of the HTTP request (route data, query strings, form data, request bodies). This process is called model binding.
+
+
+	
+	• Controllers (Folder):
+		○ Inject the Service via constructor and is derived from the ControllerBase class
+		○ This is where we declare out Actions Methods (ActionResult) and uses Attributes to configure routes and HTTP Methods (GET/PUT/POST/DELETE)
+			§ EXAMPLE: 
+				□ [Route("[controller]")]: Sets the base route to match the controller name. For UsersController, the base route is /Users.
+			§ OR
+				□ [HttpPut("{UserId}")]
+				□         public ActionResult<UserDTO> UpdateUser(int UserId, UserDTO UpdatedUser)
+				□         {
+				□             _userService.UpdateUser(UserId, UpdatedUser);
+				□             return Ok(UpdatedUser);
+				□         }
+	• Data (Folder)
+		○ Holds AppDbContext
+			§ How we interact with database
+				□ AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+					® EF uses to create the DB Context based on Models
+				□ Provide Models through a DB Set
+					® Use OnModelCteating to override the default to ensure FK is established (using HasForeighKey)
+	• DTO (Folder)
+		○ We use this to specify what is actually seen by the client/user
+		○ We don’t need to show them everything 
+		○ Can have multiple Dtos
+	• Migrations (Folder)
+		○ Created by terminal prompt (Add Initial Create)
+		○ This creates the tables for us (after DB Update prompt)
+	• Models (Folder)
+		○ One to One
+			§ For when an entity can only be associated with one other entity (creates a dependency within it)
+				□ Ex: User can only have one profile
+		○ One to Many
+			§ For when an entity can be associates with multiple other entities 
+				□ Ex: Food Type > Fruits/Veg
+				□ Use ICollection
+					® Ex: Class Food, ICollection<Fruit>
+	• Services (Folder)
+		○ Services (Just the Method: UserDTO CreateUser)
+			§ Implements IService via inheritance and uses DI to access the DB Context
+			§ Helps validate if new data is in right format
+				□ If User is null/Data is invalid, throw Exception, Else Complete the action (remove/update/add/etc) to _context and save changes
+				□ Can Return either the entity, the dto, or no return at all
+			§ ReadOnly to AppDbContext
+		○ Iservice (Contaiins Business logic: _context = context, _context User: Has properties name/email/etc.)
+			§ Interface contracts the methods for the class to implement
+			§ Uses DI so that IService has the most basic version of the dependency to work with 
+	
+	• AppSetting.Json
+		• Add the ConnectionString (server, db name, other info)
+	• Program.cs
+		• Add the service to container
+			○ Builder.Services.Add Controllers
+		• Register the new services into DI container
+			○ Buiilder.services.AddScoped<IUserService, UserService>
+
+
+
+
+
+
